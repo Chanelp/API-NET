@@ -8,4 +8,4 @@
 #     "summary": "Omg amazing"
 # }
 
-GET https://localhost:7001/weatherforecast
+GET https://localhost:7001/api/weatherforecast/Get
