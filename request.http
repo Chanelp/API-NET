@@ -1,1 +1,11 @@
+# POST https://localhost:7001/weatherforecast
+# content-Type: application/json
+
+# {
+#     "date": "5030-01-28T21:05:16.9191243-04:00",
+#     "temperatureC": 0,
+#     "temperatureF": 0,
+#     "summary": "Omg amazing"
+# }
+
 GET https://localhost:7001/weatherforecast
