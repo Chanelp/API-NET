@@ -1,4 +1,4 @@
-# POST https://localhost:7001/weatherforecast
+# POST https://localhost:7001/api/weatherforecast
 # content-Type: application/json
 
 # {
@@ -8,4 +8,6 @@
 #     "summary": "Omg amazing"
 # }
 
-GET https://localhost:7001/api/weatherforecast/Get
+GET https://localhost:7001/api/weatherforecast/get
+
+# DELETE https://localhost:7001/api/weatherforecast/5
