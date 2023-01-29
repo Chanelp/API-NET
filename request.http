@@ -8,6 +8,6 @@
 #     "summary": "Omg amazing"
 # }
 
-GET https://localhost:7001/api/weatherforecast/get
+GET https://localhost:7001/api/weatherforecast?time
 
 # DELETE https://localhost:7001/api/weatherforecast/5
