@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApiNet.Services;
+using WebApiNet.Models;
 
 namespace WebApiNet.Controllers;
 
@@ -22,4 +23,12 @@ public class CategoriaController : ControllerBase
         return Ok(categoriaService.Get());
     }
 
+    [HttpPost]
+    public IActionResult Post([FromBody] Categoria categoria)
+    {
+        categoriaService.Save(categoria);
+        return Ok();
+    }
+
+    
 }
