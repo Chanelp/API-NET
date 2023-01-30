@@ -8,6 +8,9 @@
 #     "summary": "Omg amazing"
 # }
 
-GET https://localhost:7001/api/weatherforecast?time
+# TimeMiddleware
+# GET https://localhost:7001/api/weatherforecast?time
 
 # DELETE https://localhost:7001/api/weatherforecast/5
+
+GET https://localhost:7001/api/helloworld
