@@ -20,10 +20,13 @@ public class TareasController : ControllerBase
         return Ok(tareasService.Get());
     }
 
+    [HttpPost]
     public IActionResult Post([FromBody] Tarea tarea)
     {
         tareasService.Save(tarea);
         return Ok();
     }
+
+    
 
 }
