@@ -31,9 +31,9 @@ public class WeatherForecastController : ControllerBase
         }
     }
 
-    [HttpGet]
-    [Route("Get/weatherforecast")]
-    [Route("[action]")]
+    [HttpGet (Name = "GetWeatherForecast")]
+    // [Route("Get/weatherforecast")]
+    // [Route("[action]")]
     public IEnumerable<WeatherForecast> Get()
     {
         _logger.LogDebug("Retornando lista de datos del clima");
