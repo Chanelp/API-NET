@@ -1,3 +1,5 @@
+using WebApiNet;
+using Microsoft.EntityFrameworkCore;
 using WebApiNet.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Configurar EF
+builder.Services.AddSqlServer<TareasContext>(builder.Configuration.GetConnectionString("cntareas"));
 
 //Inyección de dependencias mediante interfaz abstracta
 builder.Services.AddScoped<IHelloWorldService, HelloWorldService>();

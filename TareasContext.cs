@@ -1,8 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using WebApiNet;
+using WebApiNet.Models;
 
-namespace WebApiNet.Models
+namespace WebApiNet
 {
     public class TareasContext : DbContext
     {

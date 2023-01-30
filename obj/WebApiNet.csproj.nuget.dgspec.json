@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Proyectos\\WebApiNet\\WebApiNet.csproj": {}
+    "D:\\Proyectos\\WebApiNet\\WebApiNet.csproj": {}
   },
   "projects": {
-    "d:\\Proyectos\\WebApiNet\\WebApiNet.csproj": {
+    "D:\\Proyectos\\WebApiNet\\WebApiNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Proyectos\\WebApiNet\\WebApiNet.csproj",
+        "projectUniqueName": "D:\\Proyectos\\WebApiNet\\WebApiNet.csproj",
         "projectName": "WebApiNet",
-        "projectPath": "d:\\Proyectos\\WebApiNet\\WebApiNet.csproj",
+        "projectPath": "D:\\Proyectos\\WebApiNet\\WebApiNet.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "d:\\Proyectos\\WebApiNet\\obj\\",
+        "outputPath": "D:\\Proyectos\\WebApiNet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,10 @@
               "version": "[6.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.13, )"
             },
