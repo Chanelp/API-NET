@@ -41,11 +41,13 @@ public class CategoriaService : ICategoriaService
     {
         var categoriaDelete = context.Categorias.Find(id);
 
-        if (categoriaDelete != null)
+        if (categoriaDelete == null)
         {
-            context.Remove(categoriaDelete);
-            await context.SaveChangesAsync();
+            throw new Exception("NOT FOUND");
         }
+
+        context.Remove(categoriaDelete);
+        await context.SaveChangesAsync();
     }
 }
 
