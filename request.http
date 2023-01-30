@@ -8,18 +8,18 @@
 #     "summary": "Omg amazing"
 # }
 
-# TimeMiddleware
+# ------- TimeMiddleware
 # GET https://localhost:7001/api/weatherforecast?time
-
 # DELETE https://localhost:7001/api/weatherforecast/5
-
 # GET https://localhost:7001/api/helloworld
-
 # GET https://localhost:7001/api/helloworld/createdb
+
+
+# ------ PROBANDO ENDPOINTS DE CATEGORIA
 
 # GET https://localhost:7001/api/Categoria
 
-# POST http://localhost:5003/api/categoria
+# POST https://localhost:7001/api/Categoria
 # content-type: application/json
 
 # {
@@ -28,11 +28,35 @@
 #     "peso": 14
 # }
 
-PUT http://localhost:5003/api/categoria/3a82ce26-8edd-4c72-9b05-05872b781198
-content-type: application/json
+# PUT https://localhost:7001/api/Categoria/3a82ce26-8edd-4c72-9b05-05872b781198
+# content-type: application/json
+
+# {
+#     "nombre": "Actividades pendientes",
+#     "descripcion": "Hacer tareas",
+#     "peso": 20
+# }
+
+# PROBANDO ENDPOINTS DE TAREAS
+#GET https://localhost:7001/api/Tareas
+
+# POST https://localhost:7001/api/Tareas
+# Content-Type: application/json
+
+# {
+#     "categoriaId": "3a82ce26-8edd-4c72-9b05-05872b781102",
+#     "titulo": "Leer mis libros",
+#     "descripcion": "Revisar cuales libros tengo pendientes y leerlos",
+#     "prioridadTarea": 1,
+#     "autor": "Mari"
+# }
+
+PUT https://localhost:7001/api/Tareas/f0de7f3b-50cf-4245-857e-7f13f13012e8
+Content-Type: application/json
 
 {
-    "nombre": "Actividades pendientes",
-    "descripcion": "Hacer tareas",
-    "peso": 20
+    "titulo": "Terminar de ver series",
+    "descripcion": "Chequear las recomendadas y verlas en la noche",
+    "prioridadTarea": 2,
+    "autor": "Laura"
 }

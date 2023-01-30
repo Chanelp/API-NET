@@ -4,7 +4,7 @@ using WebApiNet.Models;
 
 namespace WebApiNet.Controllers;
 
-[Route("api[controller]")]
+[Route("api/[controller]")]
 public class TareasController : ControllerBase
 {
     protected readonly ITareasService _tareasService;
