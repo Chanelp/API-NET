@@ -19,11 +19,20 @@
 
 # GET https://localhost:7001/api/Categoria
 
-POST http://localhost:5003/api/categoria
+# POST http://localhost:5003/api/categoria
+# content-type: application/json
+
+# {
+#     "nombre": "Actividad vacaciones",
+#     "descripcion": "Planificar viajes",
+#     "peso": 14
+# }
+
+PUT http://localhost:5003/api/categoria/3a82ce26-8edd-4c72-9b05-05872b781198
 content-type: application/json
 
 {
-    "nombre": "Actividad vacaciones",
-    "descripcion": "Planificar viajes",
-    "peso": 14
+    "nombre": "Actividades pendientes",
+    "descripcion": "Hacer tareas",
+    "peso": 20
 }
