@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IHelloWorldService, HelloWorldService>();
 
 //Inyección de dependencias mediante expresión lambda no recommend
-builder.Services.AddScoped(p => new HelloWorldService());
+builder.Services.AddScoped<IHelloWorldService>(p => new HelloWorldService());
 
 
 var app = builder.Build();
