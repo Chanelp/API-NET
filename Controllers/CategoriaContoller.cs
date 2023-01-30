@@ -10,7 +10,7 @@ public class CategoriaController : ControllerBase
     // Recibir el servicio de Categoria
     protected readonly ICategoriaService _categoriaService;
 
-    public CategoriaController(CategoriaService service)
+    public CategoriaController(ICategoriaService service)
     {
         _categoriaService = service;
     }

@@ -7,9 +7,9 @@ namespace WebApiNet.Controllers;
 [Route("api[controller]")]
 public class TareasController : ControllerBase
 {
-    protected readonly TareasService _tareasService;
+    protected readonly ITareasService _tareasService;
 
-    public TareasController(TareasService service)
+    public TareasController(ITareasService service)
     {
         _tareasService = service;
     }

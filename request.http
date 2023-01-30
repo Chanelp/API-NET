@@ -13,4 +13,8 @@
 
 # DELETE https://localhost:7001/api/weatherforecast/5
 
-GET https://localhost:7001/api/helloworld
+# GET https://localhost:7001/api/helloworld
+
+# GET https://localhost:7001/api/helloworld/createdb
+
+GET https://localhost:7001/api/Categoria
