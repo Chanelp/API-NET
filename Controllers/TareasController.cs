@@ -27,10 +27,17 @@ public class TareasController : ControllerBase
         return Ok();
     }
 
-    [HttpPut]
+    [HttpPut("{id}")]
     public IActionResult Update(Guid id, [FromBody] Tarea tarea)
     {
         tareasService.Update(id, tarea);
+        return Ok();
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult Delete(Guid id)
+    {
+        tareasService.Delete(id);
         return Ok();
     }
 
