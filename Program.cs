@@ -8,8 +8,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-//Inyección de dependencias mediante expresión lambda no recommend, solo si hay que pasar parámetros
-//builder.Services.AddScoped<IHelloWorldService>(p => new HelloWorldService());
 
 //Inyección de dependencias mediante interfaz abstracta
 builder.Services.AddScoped<IHelloWorldService, HelloWorldService>();
