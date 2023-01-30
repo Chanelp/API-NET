@@ -1,7 +1,7 @@
-using WebApiNet;
-namespace WebApiNet.Models;
+using WebApiNet.Models;
+namespace WebApiNet.Services;
 
-public class TareasService
+public class TareasService : ITareasService
 {
     TareasContext context;
     public TareasService(TareasContext dbcontext)
