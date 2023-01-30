@@ -17,4 +17,13 @@
 
 # GET https://localhost:7001/api/helloworld/createdb
 
-GET https://localhost:7001/api/Categoria
+# GET https://localhost:7001/api/Categoria
+
+POST http://localhost:5003/api/categoria
+content-type: application/json
+
+{
+    "nombre": "Actividad vacaciones",
+    "descripcion": "Planificar viajes",
+    "peso": 14
+}
