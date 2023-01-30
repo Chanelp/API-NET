@@ -50,5 +50,8 @@ public class TareasService
 
 public interface ITareasService
 {
-
+    IEnumerable<Tarea> Get();
+    Task Save(Tarea tarea);
+    Task Update(Guid id, Tarea tarea);
+    Task Delete(Guid id);
 }

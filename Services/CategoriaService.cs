@@ -25,22 +25,23 @@ public class CategoriaService : ICategoriaService
     {
         var categoriaActual = context.Categorias.Find(id);
 
-        if(categoriaActual != null)
+        if (categoriaActual == null)
         {
-            categoriaActual.Nombre = categoria.Nombre;
-            categoriaActual.Descripcion = categoria.Descripcion;
-            categoriaActual.Peso = categoria.Peso;
-
-            await context.SaveChangesAsync();
+            throw new Exception("NOT FOUND");
         }
 
+        categoriaActual.Nombre = categoria.Nombre;
+        categoriaActual.Descripcion = categoria.Descripcion;
+        categoriaActual.Peso = categoria.Peso;
+
+        await context.SaveChangesAsync();
     }
 
     public async Task Delete(Guid id)
     {
         var categoriaDelete = context.Categorias.Find(id);
 
-        if(categoriaDelete != null)
+        if (categoriaDelete != null)
         {
             context.Remove(categoriaDelete);
             await context.SaveChangesAsync();
