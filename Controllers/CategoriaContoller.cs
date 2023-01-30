@@ -30,5 +30,11 @@ public class CategoriaController : ControllerBase
         return Ok();
     }
 
-    
+    [HttpPut("{id}")]
+    public IActionResult Put(Guid id, [FromBody] Categoria categoria)
+    {
+        categoriaService.Update(id, categoria);
+        return Ok();
+    }
+
 }
