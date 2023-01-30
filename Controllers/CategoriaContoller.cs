@@ -37,4 +37,11 @@ public class CategoriaController : ControllerBase
         return Ok();
     }
 
+    [HttpDelete("{id}")]
+    public IActionResult Delete(Guid id)
+    {
+        categoriaService.Delete(id);
+        return Ok();
+    }
+
 }
