@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyectos\\WebApiNet\\WebApiNet.csproj": {}
+    "d:\\Proyectos\\WebApiNet\\WebApiNet.csproj": {}
   },
   "projects": {
-    "D:\\Proyectos\\WebApiNet\\WebApiNet.csproj": {
+    "d:\\Proyectos\\WebApiNet\\WebApiNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\WebApiNet\\WebApiNet.csproj",
+        "projectUniqueName": "d:\\Proyectos\\WebApiNet\\WebApiNet.csproj",
         "projectName": "WebApiNet",
-        "projectPath": "D:\\Proyectos\\WebApiNet\\WebApiNet.csproj",
+        "projectPath": "d:\\Proyectos\\WebApiNet\\WebApiNet.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\WebApiNet\\obj\\",
+        "outputPath": "d:\\Proyectos\\WebApiNet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

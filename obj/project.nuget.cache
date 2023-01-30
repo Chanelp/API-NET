@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m0ijfO16CzPhKVmHpkMxmgWKYriPa6SPBGnJqNpyp9Mx6nAI6wHXJv9ALkLOxks3DlBA6fsmkna/tOQr0ak/nQ==",
+  "dgSpecHash": "P6dE7K2ShIp/braVLkeHJ3iR/heTqmm9ytaEoiyy34Ae79wxfrbSUbJ3eE+0MsmebUcSnNqZrM//z9TWdqTzoA==",
   "success": true,
-  "projectFilePath": "D:\\Proyectos\\WebApiNet\\WebApiNet.csproj",
+  "projectFilePath": "d:\\Proyectos\\WebApiNet\\WebApiNet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.13\\microsoft.entityframeworkcore.6.0.13.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.13\\microsoft.entityframeworkcore.abstractions.6.0.13.nupkg.sha512",
