@@ -27,6 +27,11 @@ public class TareasController : ControllerBase
         return Ok();
     }
 
-    
+    [HttpPut]
+    public IActionResult Update(Guid id, [FromBody] Tarea tarea)
+    {
+        tareasService.Update(id, tarea);
+        return Ok();
+    }
 
 }
