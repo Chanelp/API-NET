@@ -7,37 +7,37 @@ namespace WebApiNet.Controllers;
 [Route("api[controller]")]
 public class TareasController : ControllerBase
 {
-    TareasService tareasService;
+    protected readonly TareasService _tareasService;
 
     public TareasController(TareasService service)
     {
-        tareasService = service;
+        _tareasService = service;
     }
 
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok(tareasService.Get());
+        return Ok(_tareasService.Get());
     }
 
     [HttpPost]
     public IActionResult Post([FromBody] Tarea tarea)
     {
-        tareasService.Save(tarea);
+        _tareasService.Save(tarea);
         return Ok();
     }
 
     [HttpPut("{id}")]
     public IActionResult Update(Guid id, [FromBody] Tarea tarea)
     {
-        tareasService.Update(id, tarea);
+        _tareasService.Update(id, tarea);
         return Ok();
     }
 
     [HttpDelete("{id}")]
     public IActionResult Delete(Guid id)
     {
-        tareasService.Delete(id);
+        _tareasService.Delete(id);
         return Ok();
     }
 
