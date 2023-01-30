@@ -1,0 +1,16 @@
+# POST https://localhost:7001/api/weatherforecast
+# content-Type: application/json
+
+# {
+#     "date": "5030-01-28T21:05:16.9191243-04:00",
+#     "temperatureC": 0,
+#     "temperatureF": 0,
+#     "summary": "Omg amazing"
+# }
+
+# TimeMiddleware
+# GET https://localhost:7001/api/weatherforecast?time
+
+# DELETE https://localhost:7001/api/weatherforecast/5
+
+GET https://localhost:7001/api/helloworld
